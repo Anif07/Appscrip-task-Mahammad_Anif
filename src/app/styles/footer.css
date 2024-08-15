@@ -1,0 +1,281 @@
+.footer {
+  height: auto;
+  width: 100%;
+  background-color: black;
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+}
+
+.footerContent {
+  width: 85%;
+  height: 100%;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-top: 100px;
+}
+
+.footerTop {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 50%;
+}
+
+.topLeftSide {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 10px;
+}
+
+.topLeftSide p,
+.topLeftSide h3 {
+  margin: 0;
+}
+
+.inputButton {
+  display: flex;
+  margin-top: 30px;
+  gap: 20px;
+}
+
+.inputButton input {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  outline: none;
+  border: none;
+  font-weight: 700;
+  font-size: 13px;
+  color: grey;
+  width: 300px;
+}
+
+.inputButton button {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  outline: none;
+  border: none;
+  background: transparent;
+  border: 1px solid grey;
+  color: grey;
+  cursor: pointer;
+  font-weight: 600;
+  opacity: 0.7;
+  border-radius: 10px;
+}
+
+.topRightSide {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 10px;
+}
+
+.contactUs {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+}
+
+.currency {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.currency h3,
+.currency p,
+.contactUs p,
+.contactUs h3,
+.usdImageDiv h4 {
+  margin: 0;
+}
+
+.usdImageDiv {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.currency p {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.usdImageDiv img {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+}
+
+.horizontalLineFooter {
+  width: 100%;
+  background-color: grey;
+  opacity: 0.7;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.footerBottom {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.bottomLeft,
+.bottomCenter,
+.bottomRight {
+  width: 30%;
+}
+
+.bottomRight {
+  width: 43%;
+}
+
+.bottomLeftContents,
+.bottomCenterContents {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.bottomLeftContents p,
+.bottomCenterContents p {
+  margin: 0;
+}
+
+.bottomCenter h3,
+.bottomRight h3 {
+  font-size: 15px;
+  padding-bottom: 8px;
+}
+
+.socialMedia {
+  display: flex;
+  gap: 10px;
+}
+
+.social {
+  border: 1px solid white;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  padding: 5px;
+}
+
+.paymentDiv {
+  margin-top: 50px;
+}
+
+.paymentMethods {
+  display: flex;
+  gap: 10px;
+}
+
+.paymentMethods img {
+  height: 30px;
+  width: 50px;
+  border-radius: 2px;
+}
+
+.copyright {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.copyright p {
+  font-size: 14px;
+  opacity: 0.6;
+}
+
+.lineFooter {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .footerContent {
+    width: 85%;
+    height: 100%;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 60px;
+  }
+
+  .footerTop {
+    display: flex;
+    gap: 100px;
+    width: 100%;
+    height: 50%;
+  }
+
+  .inputButton input {
+    width: 100px;
+  }
+
+  .inputButton button {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .copyright {
+    padding-bottom: 150px;
+  }
+}
+
+@media (max-width: 500px) {
+  .footerContent {
+    width: 90%;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+  }
+
+  .footerTop,
+  .footerBottom {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .inputButton input {
+    width: 160px;
+  }
+
+  .currency p {
+    display: none;
+  }
+
+  .lineFooter {
+    display: block;
+  }
+
+  .bottomLeft,
+  .bottomCenter,
+  .bottomRight {
+    width: 100%;
+  }
+}

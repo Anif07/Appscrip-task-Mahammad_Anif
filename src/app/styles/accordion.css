@@ -1,0 +1,41 @@
+/* Accordion.module.css */
+.accordionBox {
+  border-top: 1px #e5e5e5 solid;
+  border-bottom: 1px #e5e5e5 solid;
+  padding: 10px 0px;
+}
+
+.sectionButton {
+  width: 100%;
+  text-align: left;
+  background-color: white;
+  border: none;
+  outline: none;
+  text-transform: capitalize;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 0 3px;
+}
+
+.subHeading {
+  font-size: 16px;
+  margin: 2px;
+}
+
+.content {
+  /* padding: 0 4px; */
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.chevron {
+  transition: transform 0.3s ease;
+}
+
+.chevron.rotate {
+  transform: rotate(63deg);
+}
