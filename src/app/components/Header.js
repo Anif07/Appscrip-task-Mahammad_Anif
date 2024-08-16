@@ -8,8 +8,6 @@ import {
   IconShoppingBag,
   IconUser,
 } from "@tabler/icons-react";
-// import headlinelogo from "../Assets/nav-top-logo.png";
-// import logo from "../Assets/Logo.png";
 import "../styles/header.css";
 
 const MergedComponent = () => {
@@ -23,15 +21,15 @@ const MergedComponent = () => {
       <div className="header">
         <section className="top">
           <span className="headline left-m">
-            {/* <img className="headline-logo" src={headlinelogo} /> */}
+            <img className="headline-logo" src={"/Assets/nav-top-logo.png"} />
             <span>Lorem ipsum dolor</span>
           </span>
           <span className="headline">
-            {/* <img className="headline-logo" src={headlinelogo} /> */}
+            <img className="headline-logo" src={"/Assets/nav-top-logo.png"} />
             <span>Lorem Ipsum Dolor </span>
           </span>
           <span className="headline right-m">
-            {/* <img className="headline-logo" src={headlinelogo} /> */}
+            <img className="headline-logo" src={"/Assets/nav-top-logo.png"} />
             <span>Lorem Ipsum Dolor</span>
           </span>
         </section>
@@ -41,9 +39,7 @@ const MergedComponent = () => {
               <div className="hamburgerButton" onClick={toggleMenu}>
                 <IconMenu2 />
               </div>
-              <span className="logo">
-                {/* <Image src={logo} alt="logo" /> */}
-              </span>
+              <span className="logo"></span>
             </div>
 
             <aside className={menuclass}>
@@ -51,12 +47,11 @@ const MergedComponent = () => {
                 <span>LOGO</span>
                 <span onClick={toggleMenu}>X</span>
               </div>
-              <div className="signup">Sign Up</div>
-              <div className="signin">Sign in</div>
-              <div className="abt">About</div>
-              <div className="skills">Skills</div>
-              <div className="stories">Stories</div>
-              <div className="contactus">Contact Us</div>
+              <div className="#">Shop</div>
+              <div className="#">Skills</div>
+              <div className="#">Stories</div>
+              <div className="#">About</div>
+              <div className="#">Contact Us</div>
             </aside>
 
             <div className="nav-utilities">

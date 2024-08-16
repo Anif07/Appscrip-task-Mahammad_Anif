@@ -1,10 +1,8 @@
 "use client";
 import React, { useContext, useState } from "react";
 import "../styles/navbar.css";
-// import { DataContext } from "../context/Dataprovider";
 const Navbar = () => {
   const [menuclass, setMenu] = useState("toggleSidebar");
-  // const { cart } = useContext(DataContext);
   const handlemenu = () => {
     setMenu("zindex3");
   };
@@ -15,15 +13,12 @@ const Navbar = () => {
     <nav>
       <section className="top">
         <span className="headline left-m">
-          <img className="headline-logo" src={headlinelogo} />
           <span>Lorem ipsum dolor</span>
         </span>
         <span className="headline">
-          <img className="headline-logo" src={headlinelogo} />{" "}
           <span>Lorem Ipsum Dolor </span>
         </span>
         <span className="headline right-m">
-          <img className="headline-logo" src={headlinelogo} />{" "}
           <span>Lorem Ipsum Dolor</span>
         </span>
       </section>
@@ -52,12 +47,7 @@ const Navbar = () => {
               alt="search"
               style={{ cursor: "pointer" }}
             />
-            {/* <Badge badgeContent={cart?.length} color="secondary">
-              <img className="img like" src={heart} alt="like" />
-            </Badge> */}
             <img className="img bag" src={bag} alt="bag" />
-            <img className="img profile" src={profile} alt="profile" />
-            {/* <img className="img lang" src={Language} alt="lang" /> */}
             <select name="languages" id="languages" className="lang">
               <option value="ENG">ENG</option>
               <option value="ESP">ESP</option>

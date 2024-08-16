@@ -96,7 +96,6 @@ export default function Home() {
             {isBoxVisible && (
               <div className={isVisible ? "box" : "boxChange"}>
                 <div className="recommendedBox">
-                  {" "}
                   <IconCheck /> <p>RECOMMENDED</p>
                 </div>
                 <p>NEWEST FIRST</p>
